@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Feedback Portal</title>
+</head>
+<body>
+  <header>
+    <h1>Student Feedback Portal</h1>
+    <p>Submit feedback for your courses</p>
+    <img
+      src="university-banner.svg"
+      alt="University feedback banner"
+      title="University Feedback Portal banner"
+    />
+  </header>
+
+  <main>
+    <section id="feedback-form">
+      <h2>Course Feedback Form</h2>
+      <form method="post" action="feedback-received.html">
+        <label for="student-name">Student Name</label>
+        <input type="text" id="student-name" name="studentName" required />
+
+        <label for="email">&#9993; Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="course">Course</label>
+        <select id="course" name="course" required>
+          <option value="">Select a course</option>
+          <option value="web-development">Web Development</option>
+          <option value="data-science">Data Science</option>
+          <option value="artificial-intelligence">Artificial Intelligence</option>
+          <option value="networking">Networking</option>
+        </select>
+
+        <fieldset>
+          <legend>&#9733; Rating</legend>
+          <label>
+            <input type="radio" name="rating" value="1" required />
+            1
+          </label>
+          <label>
+            <input type="radio" name="rating" value="2" />
+            2
+          </label>
+          <label>
+            <input type="radio" name="rating" value="3" />
+            3
+          </label>
+          <label>
+            <input type="radio" name="rating" value="4" />
+            4
+          </label>
+          <label>
+            <input type="radio" name="rating" value="5" />
+            5
+          </label>
+        </fieldset>
+
+        <label for="comments">&#9998; Comments</label>
+        <textarea id="comments" name="comments" rows="5" cols="40" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Observation</h2>
+      <p>
+        After submitting, the URL does not show your feedback details because the
+        form uses the POST method.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Back to Home</a></p>
+    <p>Email us at feedback@university.edu</p>
+    <p>&copy; 2026 Student Feedback Portal</p>
+  </footer>
+</body>
+</html>

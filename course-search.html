@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course Search Portal</title>
+</head>
+<body>
+  <header>
+    <h1><font color="blue">Course Search Portal</font></h1>
+    <p><big>Find your courses quickly using the search form</big></p>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <h2><font color="blue"><big><big>&#128269;</big></big> Course Search</font></h2>
+      </header>
+      <form method="get" action="search-results.html">
+        <label for="course"><big>Course Name</big></label>
+        <input
+          type="text"
+          id="course"
+          name="course"
+          placeholder="e.g., AI"
+          required
+        />
+
+        <label for="department"><big>Department</big></label>
+        <select id="department" name="department" required>
+          <option value="">Select a department</option>
+          <option value="computer-science">Computer Science</option>
+          <option value="data-science">Data Science</option>
+          <option value="networking">Networking</option>
+        </select>
+
+        <button type="submit"><font color="blue"><big>Search Courses</big></font></button>
+      </form>
+    </section>
+
+    <section>
+      <h2><font color="blue">Observation</font></h2>
+      <p>
+        After submitting, the URL shows a query string like
+        <code>?course=AI&amp;department=computer-science</code>. This is
+        appropriate for search because the data is non-sensitive and short.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Back to Home</a></p>
+  </footer>
+</body>
+</html>

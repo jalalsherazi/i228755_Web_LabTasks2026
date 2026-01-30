@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XHTML vs HTML5 Structure</title>
+</head>
+<body>
+  <h1>XHTML Style vs HTML5 Semantic Style</h1>
+
+  <section>
+    <h2>Version A - XHTML Style (Div Based)</h2>
+    <div>
+      <div>
+        <h3>Student Feedback Portal</h3>
+        <p>Share your course experience and help improve learning.</p>
+      </div>
+      <div>
+        <a href="index.html">Home</a> |
+        <a href="feedback.html">Feedback</a> |
+        <a href="xhtml-vs-html5.html">HTML Structure Comparison</a>
+      </div>
+      <div>
+        <h4>Quick Feedback</h4>
+        <p>Use this short form to send quick feedback.</p>
+        <form>
+          <label for="quick-course">Course</label>
+          <input type="text" id="quick-course" name="quickCourse" />
+          <label for="quick-comment">Comment</label>
+          <input type="text" id="quick-comment" name="quickComment" />
+        </form>
+      </div>
+      <div>
+        <h4>Feedback Tips</h4>
+        <ul>
+          <li>Be specific and clear.</li>
+          <li>Focus on course content and delivery.</li>
+          <li>Suggest practical improvements.</li>
+        </ul>
+      </div>
+      <div>
+        <p>Contact: feedback@university.edu</p>
+        <p>&copy; 2026 Student Feedback Portal</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Version B - HTML5 Semantic Style</h2>
+    <header>
+      <h3>Student Feedback Portal</h3>
+      <p>Share your course experience and help improve learning.</p>
+    </header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="feedback.html">Feedback</a> |
+      <a href="xhtml-vs-html5.html">HTML Structure Comparison</a>
+    </nav>
+    <main>
+      <h4>Quick Feedback</h4>
+      <p>Use this short form to send quick feedback.</p>
+      <form>
+        <label for="quick-course-2">Course</label>
+        <input type="text" id="quick-course-2" name="quickCourse" />
+        <label for="quick-comment-2">Comment</label>
+        <input type="text" id="quick-comment-2" name="quickComment" />
+      </form>
+    </main>
+    <aside>
+      <h4>Feedback Tips</h4>
+      <ul>
+        <li>Be specific and clear.</li>
+        <li>Focus on course content and delivery.</li>
+        <li>Suggest practical improvements.</li>
+      </ul>
+    </aside>
+    <footer>
+      <p>Contact: feedback@university.edu</p>
+      <p>&copy; 2026 Student Feedback Portal</p>
+    </footer>
+  </section>
+
+  <footer>
+    <p><a href="index.html">Back to Home</a></p>
+  </footer>
+</body>
+</html>
