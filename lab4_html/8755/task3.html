@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Member Card - Task 3</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Team Member Card -->
+    <div
+        class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out p-6 max-w-sm w-full md:max-w-2xl flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
+
+        <!-- Profile Image -->
+        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member"
+                class="h-24 w-24 md:h-32 md:w-32 rounded-full object-cover shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mt-2 md:mt-0">Jalal Haider</h2>
+            <p class="text-indigo-500 font-medium text-sm md:text-base mb-2">Senior Frontend Developer</p>
+            <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
+                Jalal is a passionate developer with over 5 years of experience in building responsive web applications.
+                She loves React, Tailwind CSS, and creating seamless user experiences.
+            </p>
+
+            <!-- Social Links -->
+            <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-blue-500 hover:scale-110 transition-transform duration-200">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-700 hover:scale-110 transition-transform duration-200">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-pink-500 hover:scale-110 transition-transform duration-200">
+                    <i class="fas fa-globe fa-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-sky-500 hover:scale-110 transition-transform duration-200">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

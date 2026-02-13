@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Workflow Management Platform</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="task4.css">
+    <!-- FontAwesome for Icons (Free SVG Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="glass-effect fixed w-full z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-bold text-2xl text-indigo-600">SmartFlow</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium transition">Features</a>
+                    <a href="#stats" class="text-gray-600 hover:text-indigo-600 font-medium transition">Statistics</a>
+                    <a href="#testimonials"
+                        class="text-gray-600 hover:text-indigo-600 font-medium transition">Testimonials</a>
+                </div>
+                <div>
+                    <a href="#"
+                        class="bg-indigo-600 text-white px-5 py-2 rounded-full font-medium hover:bg-indigo-700 transition shadow-md">Get
+                        Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white pt-24 pb-16 lg:pt-32 lg:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center">
+            <!-- Text Content -->
+            <div class="lg:w-1/2 text-center lg:text-left mt-10 lg:mt-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Streamline Your Workflow <br> With Intelligence
+                </h1>
+                <p class="text-lg md:text-xl text-indigo-100 mb-8 max-w-2xl mx-auto lg:mx-0">
+                    Boost productivity and automate tasks with our AI-driven management platform. The smart choice for
+                    modern teams.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                    <a href="#"
+                        class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-gray-100 transition transform hover:-translate-y-1">Start
+                        Free Trial</a>
+                    <a href="#"
+                        class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition transform hover:-translate-y-1">Watch
+                        Demo</a>
+                </div>
+            </div>
+            <!-- Illustration/Image -->
+            <div class="lg:w-1/2 flex justify-center">
+                <img src="https://cdn.dribbble.com/users/1126935/screenshots/15444390/media/aa399120b22d1656bc388a53108c4840.png?compress=1&resize=800x600"
+                    alt="Workflow Illustration"
+                    class="rounded-lg shadow-2xl max-w-full h-auto transform hover:scale-105 transition duration-500">
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Powerful Features</h2>
+                <p class="mt-4 text-xl text-gray-500">Everything you need to manage projects efficiently.</p>
+            </div>
+
+            <!-- Grid: 3 cols lg, 2 cols md, 1 col sm -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Feature 1 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-8 transition duration-300 border border-gray-100">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-bolt fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Fast Automation</h3>
+                    <p class="text-gray-600">Automate repetitive tasks with our custom workflow engine.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-8 transition duration-300 border border-gray-100">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-chart-line fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Detailed Analytics</h3>
+                    <p class="text-gray-600">Gain insights into team performance with real-time dashboards.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-8 transition duration-300 border border-gray-100">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-users fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Team Collaboration</h3>
+                    <p class="text-gray-600">Built-in chat and file sharing to keep everyone on the same page.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-8 transition duration-300 border border-gray-100">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-lock fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Secure Data</h3>
+                    <p class="text-gray-600">Enterprise-grade encryption keeps your sensitive data safe.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-8 transition duration-300 border border-gray-100">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-cloud fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Cloud Synced</h3>
+                    <p class="text-gray-600">Access your work from anywhere, on any device, instantly.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-8 transition duration-300 border border-gray-100">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-puzzle-piece fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Integrations</h3>
+                    <p class="text-gray-600">Connect with your favorite tools like Slack, Jira, and GitHub.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="py-16 bg-indigo-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-5xl font-extrabold mb-2 text-indigo-300">10k+</div>
+                    <div class="text-xl font-medium opacity-80">Teams Onboarded</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-5xl font-extrabold mb-2 text-indigo-300">5M+</div>
+                    <div class="text-xl font-medium opacity-80">Tasks Completed</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-5xl font-extrabold mb-2 text-indigo-300">99.9%</div>
+                    <div class="text-xl font-medium opacity-80">Uptime Guarantee</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">What Our Users Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <img class="h-16 w-16 rounded-full object-cover mr-4"
+                            src="https://randomuser.me/api/portraits/women/65.jpg" alt="User Image">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-indigo-500 text-sm">Product Manager, TechCorp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"SmartFlow has completely revolutionized how we handle our sprint
+                        planning. The automation features alone save us hours every week."</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <img class="h-16 w-16 rounded-full object-cover mr-4"
+                            src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Image">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-800">Michael Chen</h4>
+                            <p class="text-indigo-500 text-sm">CTO, StartUp Inc.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The best workflow tool I've used in years. It's intuitive, fast,
+                        and the support team is incredible. Highly recommended!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-1">
+                    <span class="text-2xl font-bold text-white block mb-4">SmartFlow</span>
+                    <p class="text-sm">Empowering teams to achieve more with less effort.</p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4 uppercase tracking-wider">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link hover:text-white transition">Features</a></li>
+                        <li><a href="#" class="footer-link hover:text-white transition">Pricing</a></li>
+                        <li><a href="#" class="footer-link hover:text-white transition">Integrations</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-semibold mb-4 uppercase tracking-wider">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="footer-link hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="footer-link hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4 uppercase tracking-wider">Connect</h3>
+                    <p class="mb-4 text-sm">hello@smartflow.com</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i
+                                class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i
+                                class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i
+                                class="fab fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 SmartFlow Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

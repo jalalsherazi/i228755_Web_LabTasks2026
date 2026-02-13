@@ -1,0 +1,52 @@
+/* Custom Enhancements for Task 4 */
+
+/* Custom Fonts if not loaded via Tailwind config */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hero Section Gradient Background */
+.hero-bg {
+    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+}
+
+/* Glassmorphism Effect for Navbar if needed, or specific cards */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Custom Hover Lift for Feature Cards (augmenting Tailwind) */
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial stacking adjustment for smaller screens if needed beyond grid */
+.testimonial-card {
+    transition: transform 0.3s ease;
+}
+
+/* Footer link hover animation */
+.footer-link {
+    position: relative;
+    display: inline-block;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #3b82f6;
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Comparison - Task 2</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold text-center mb-10 text-gray-900">Compare Plans & Features</h1>
+
+        <!-- Feature Comparison Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Free Tier -->
+            <div
+                class="bg-white border rounded-xl p-6 shadow hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col items-center">
+                <h2 class="text-xl md:text-2xl font-semibold text-gray-600 text-center">Free</h2>
+                <p class="text-sm text-gray-500 mb-6 text-center">Perfect for individuals.</p>
+
+                <ul class="space-y-3 w-full mb-8">
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> 1 Project
+                    </li>
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> Basic Analytics
+                    </li>
+                    <li class="flex items-center gap-2 text-sm text-gray-400">
+                        <span class="text-red-500">✖</span> Team Collaboration
+                    </li>
+                    <li class="flex items-center gap-2 text-sm text-gray-400">
+                        <span class="text-red-500">✖</span> Cloud Storage
+                    </li>
+                </ul>
+
+                <button
+                    class="mt-auto w-full bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200">
+                    Enable
+                </button>
+            </div>
+
+            <!-- Team Tier -->
+            <div
+                class="bg-white border rounded-xl p-6 shadow hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col items-center hover:border-blue-400">
+                <h2 class="text-xl md:text-2xl font-semibold text-blue-600 text-center">Team</h2>
+                <p class="text-sm text-gray-500 mb-6 text-center">For small teams.</p>
+
+                <ul class="space-y-3 w-full mb-8">
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> 5 Projects
+                    </li>
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> Advanced Analytics
+                    </li>
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> Team Collaboration
+                    </li>
+                    <li class="flex items-center gap-2 text-sm text-gray-400">
+                        <span class="text-red-500">✖</span> Priority Support
+                    </li>
+                </ul>
+
+                <button
+                    class="mt-auto w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200">
+                    Upgrade
+                </button>
+            </div>
+
+            <!-- Business Tier -->
+            <div
+                class="bg-white border rounded-xl p-6 shadow hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col items-center hover:border-green-400">
+                <h2 class="text-xl md:text-2xl font-semibold text-green-600 text-center">Business</h2>
+                <p class="text-sm text-gray-500 mb-6 text-center">Scaling your business.</p>
+
+                <ul class="space-y-3 w-full mb-8">
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> Unlimited Projects
+                    </li>
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> Advanced Analytics
+                    </li>
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> 50GB Cloud Storage
+                    </li>
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> Priority Support
+                    </li>
+                </ul>
+
+                <button
+                    class="mt-auto w-full bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200">
+                    Start Trial
+                </button>
+            </div>
+
+            <!-- Enterprise Tier -->
+            <div
+                class="bg-white border rounded-xl p-6 shadow hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col items-center hover:border-yellow-400">
+                <h2 class="text-xl md:text-2xl font-semibold text-yellow-600 text-center">Enterprise</h2>
+                <p class="text-sm text-gray-500 mb-6 text-center">Full control & security.</p>
+
+                <ul class="space-y-3 w-full mb-8">
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> All Features
+                    </li>
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> Dedicated Manager
+                    </li>
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> SSO & Security
+                    </li>
+                    <li class="flex items-center gap-2 text-sm">
+                        <span class="text-green-600">✔</span> Custom Integrations
+                    </li>
+                </ul>
+
+                <button
+                    class="mt-auto w-full bg-yellow-600 hover:bg-yellow-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200">
+                    Contact Sales
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

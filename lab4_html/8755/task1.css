@@ -1,0 +1,174 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Typography Variables (simulating sizes) */
+:root {
+    --font-large: 17px;
+    --font-medium: 15px;
+    --font-small: 13px;
+    --color-header: #0a1a4f;
+    --color-nav: #1e3a8a;
+    --color-card: #1d4ed8;
+    --color-text-light: #ffffff;
+}
+
+/* Header */
+.dashboard-header {
+    background-color: var(--color-header);
+    color: var(--color-text-light);
+    padding: 1rem;
+    text-align: center;
+}
+
+.dashboard-header h1 {
+    font-size: var(--font-large);
+    margin: 0;
+}
+
+/* Navigation - Flexbox */
+.dashboard-nav {
+    display: flex;
+    background-color: var(--color-nav);
+    padding: 0.5rem;
+    justify-content: center; /* Center links on large screens */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+.dashboard-nav a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    font-size: var(--font-medium);
+    transition: background-color 0.3s;
+}
+
+.dashboard-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Activity Section - CSS Grid */
+.dashboard-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.activity-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Large screens default */
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: var(--color-card);
+    color: var(--color-text-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-size: var(--font-large);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: var(--font-medium);
+}
+
+/* Media Gallery */
+.media-gallery h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Large screens default */
+    gap: 1rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: 3/2; /* Maintain aspect ratio */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Breakpoints */
+
+/* Medium Screens (>= 768px and < 1024px) */
+@media screen and (max-width: 1023px) {
+    /* Navigation remains horizontal, defined by default flex behavior */
+    
+    /* Activity Section: 2 cards per row */
+    .activity-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Gallery: 3 items per row */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Small Screens (< 768px) */
+@media screen and (max-width: 767px) {
+    /* Navigation stacks vertically */
+    .dashboard-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dashboard-nav a {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .dashboard-nav a:last-child {
+        border-bottom: none;
+    }
+
+    /* Activity Section: 1 card per row */
+    .activity-section {
+        grid-template-columns: 1fr;
+    }
+
+    /* Gallery: 1 item per row */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
