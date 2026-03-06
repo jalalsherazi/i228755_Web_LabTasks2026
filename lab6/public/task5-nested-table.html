@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5 - Nested Table with Sort & Search</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <a href="./index.html">Back to Home</a>
+      <h1>Task 5: Nested Table with Sort & Search</h1>
+
+      <section class="card">
+        <div class="toolbar">
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Search by student name or course"
+          />
+          <button data-sort-key="name">Sort by Name</button>
+          <button data-sort-key="semester">Sort by Semester</button>
+          <button data-sort-key="avgScore">Sort by Avg Score</button>
+          <span id="sortStateText" class="muted"></span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="nested-table">
+            <thead>
+              <tr>
+                <th>Expand</th>
+                <th>Student Name</th>
+                <th>Semester</th>
+                <th>Type</th>
+                <th>Course</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody id="nestedTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/task5.js"></script>
+  </body>
+</html>

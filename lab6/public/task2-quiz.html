@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2 - Interactive Quiz</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container quiz-wrap">
+      <a href="./index.html">Back to Home</a>
+      <h1>Task 2: Interactive Quiz with Scoreboard</h1>
+
+      <section id="quizSection" class="card">
+        <div class="progress-track" aria-label="Progress">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+        <p id="questionCounter" class="muted"></p>
+        <h2 id="questionText"></h2>
+        <div id="optionsContainer" class="quiz-options"></div>
+        <div class="quiz-nav">
+          <button id="prevBtn">Previous</button>
+          <button id="nextBtn">Next</button>
+          <button id="submitBtn" class="hidden">Submit Quiz</button>
+        </div>
+      </section>
+
+      <section id="resultSection" class="card hidden">
+        <h2>Scoreboard</h2>
+        <p id="totalScoreText"></p>
+        <div class="table-wrap">
+          <table class="score-table">
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>Your Answer</th>
+                <th>Correct Answer</th>
+                <th>Marks</th>
+              </tr>
+            </thead>
+            <tbody id="scoreboardBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/task2.js"></script>
+  </body>
+</html>

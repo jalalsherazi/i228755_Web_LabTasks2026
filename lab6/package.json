@@ -1,0 +1,12 @@
+{
+  "name": "lab6-dom-express",
+  "version": "1.0.0",
+  "description": "Lab 6 tasks: DOM manipulation and Express route parameters/query parameters",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3 - Mini Kanban Board</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <a href="./index.html">Back to Home</a>
+      <h1>Task 3: Mini Kanban Board</h1>
+      <p class="muted">
+        Tasks start in To-Do. Drag <strong>Exam prep</strong> to In Progress to
+        match the required scenario.
+      </p>
+
+      <section class="card">
+        <form id="addTaskForm" class="kanban-form">
+          <input
+            id="taskTitleInput"
+            type="text"
+            placeholder="Task title"
+            required
+            maxlength="80"
+          />
+          <select id="taskPrioritySelect" required>
+            <option value="low">Low Priority</option>
+            <option value="medium" selected>Medium Priority</option>
+            <option value="high">High Priority</option>
+          </select>
+          <button type="submit">Add Task</button>
+        </form>
+      </section>
+
+      <section class="kanban-board" id="kanbanBoard">
+        <article class="kanban-column">
+          <h2>To-Do</h2>
+          <ul class="kanban-list" data-column="todo"></ul>
+        </article>
+
+        <article class="kanban-column">
+          <h2>In Progress</h2>
+          <ul class="kanban-list" data-column="inprogress"></ul>
+        </article>
+
+        <article class="kanban-column">
+          <h2>Done</h2>
+          <ul class="kanban-list" data-column="done"></ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="./scripts/task3.js"></script>
+  </body>
+</html>

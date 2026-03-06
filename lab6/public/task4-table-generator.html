@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4 - Dynamic Table Generator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <a href="./index.html">Back to Home</a>
+      <h1>Task 4: Dynamic Table Generator</h1>
+
+      <section class="card">
+        <form id="tableGeneratorForm" class="generator-form">
+          <label>
+            Rows
+            <input id="rowsInput" type="number" min="1" max="25" required />
+          </label>
+          <label>
+            Columns
+            <input id="colsInput" type="number" min="1" max="25" required />
+          </label>
+          <button type="submit">Generate Table</button>
+        </form>
+        <p id="validationMessage" class="error"></p>
+        <div id="tableContainer" class="table-wrap"></div>
+      </section>
+    </main>
+
+    <script src="./scripts/task4.js"></script>
+  </body>
+</html>

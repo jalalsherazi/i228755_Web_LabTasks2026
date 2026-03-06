@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1 - Image Gallery</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <a href="./index.html">Back to Home</a>
+      <h1>Task 1: Image Gallery with Filtering and Modal</h1>
+      <p class="muted">
+        Gallery items are generated dynamically from JavaScript data.
+      </p>
+
+      <section class="card">
+        <div id="filterControls" class="filter-controls"></div>
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-panel">
+        <img id="modalImage" src="" alt="" />
+        <div class="modal-content">
+          <div class="modal-head">
+            <h2 id="modalTitle"></h2>
+            <button id="closeModal" class="btn-close" aria-label="Close modal">
+              x
+            </button>
+          </div>
+          <p id="modalDescription" class="muted"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/task1.js"></script>
+  </body>
+</html>
